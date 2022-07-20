@@ -1,0 +1,16 @@
+﻿@model List<ApplicationCore.Models.MovieCardModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Model takes whatever is passed in View() this case is View(movieCards) -->
+@foreach(var movieCard in Model)
+{
+    <h2>
+        @movieCard.Id
+    </h2>
+    <h3>
+        @movieCard.Title
+    </h3>
+}
