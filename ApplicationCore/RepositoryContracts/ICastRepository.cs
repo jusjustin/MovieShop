@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ApplicationCore.Entities;
 
 namespace ApplicationCore.RepositoryContracts
 {
     public interface ICastRepository
     {
+        Task<Movie> GetById(int id);
     }
 }
