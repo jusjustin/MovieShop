@@ -11,8 +11,8 @@ namespace ApplicationCore.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public string Gender { get; set; }
-        public string TmdbUrl { get; set; }
-        public string ProfilePath { get; set; }
+        public string TmdbUrl { get; set; } //Site to more info on actor
+        public string ProfilePath { get; set; } //Cast Photo
 
         public ICollection<MovieCast> MoviesOfCast { get; set; }
     }

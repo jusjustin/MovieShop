@@ -7,6 +7,8 @@ using ApplicationCore.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
+//This section defines the database, in our case we only have one database
+
 namespace Infrastructure.Data
 {
     public class MovieShopDbContext : DbContext
@@ -125,9 +127,6 @@ namespace Infrastructure.Data
             builder.HasIndex(m => m.Price);
             builder.HasIndex(m => m.Revenue);
             builder.HasIndex(m => m.Budget);
-            //... Git Abhilash Reddy's Repository
-            //Migrate via Tools > NuGet Package > Terminal
-            //then update database
 
         }
     }

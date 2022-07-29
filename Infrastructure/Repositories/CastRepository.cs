@@ -13,14 +13,17 @@ namespace Infrastructure.Repositories
     public class CastRepository : ICastRepository
     {
         private readonly MovieShopDbContext _movieShopDbContext;
-        public async Task<Movie> GetById(int id)
+        public CastRepository(MovieShopDbContext movieShopDbContext)
         {
-            var movieDetails = await _movieShopDbContext.Movies
-                .Include(m => m.GenresOfMovie).ThenInclude(m => m.Genre)
-                .Include(m => m.CastsOfMovie).ThenInclude(m => m.Cast)
-                .Include(m => m.Trailers)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            return movieDetails;
+            _movieShopDbContext = movieShopDbContext;
         }
+        public async Task<Cast> GetById(int id)
+        {
+            var castDetails = await _movieShopDbContext.Casts
+                .Include(m => m.MoviesOfCast).ThenInclude(m => m.Movie)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            return castDetails;
+        }
+
     }
 }

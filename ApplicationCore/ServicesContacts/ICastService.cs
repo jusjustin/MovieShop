@@ -9,6 +9,7 @@ namespace ApplicationCore.ServicesContacts
 {
     public interface ICastService
     {
-        Task<MovieDetailsModel> GetCastDetails(int movieId);
+        //Task<List<MovieCardModel>> GetMoviesFromCast();
+        Task<CastDetailsModel> GetCastDetails(int castId);
     }
 }

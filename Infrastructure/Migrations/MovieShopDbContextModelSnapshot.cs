@@ -67,7 +67,7 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("MovieId");
 
-                    b.ToTable("Favorite");
+                    b.ToTable("Favorites");
                 });
 
             modelBuilder.Entity("ApplicationCore.Entities.Genre", b =>
@@ -322,7 +322,7 @@ namespace Infrastructure.Migrations
                     b.HasIndex("Email")
                         .IsUnique();
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("ApplicationCore.Entities.UserRole", b =>

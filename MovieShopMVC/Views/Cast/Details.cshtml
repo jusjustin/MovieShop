@@ -1,4 +1,28 @@
 ﻿@using ApplicationCore.Models
-@model ApplicationCore.Models.CastModel
+@model ApplicationCore.Models.CastDetailsModel
 
 <h1>Cast Details</h1>
+
+<a>
+	@Model.Id
+	<br />
+	@Model.Name
+	<br />
+	@Model.Gender
+	<br />
+	@Model.ProfilePath
+	<br />
+	<hr />
+	@foreach(var movie in @Model.Movies)
+	{
+		
+		@movie.Id
+		<br />
+		@movie.PosterUrl
+		<br />
+		@movie.Title
+		<br />
+		@movie.Character
+		<hr />
+	}
+</a>
