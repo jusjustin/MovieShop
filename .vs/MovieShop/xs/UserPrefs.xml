@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{BDA8A62D-D84B-4EEE-B9D0-2E028DFB7AD5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieShopMVC/Views/Cast/Details.cshtml">
+    <Files>
+      <File FileName="MovieShopMVC/Views/Cast/Details.cshtml" Line="14" Column="116" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MovieShop" expanded="True">
+            <Node name="ApplicationCore" expanded="True" />
+            <Node name="Infrastructure" expanded="True" />
+            <Node name="MovieShopMVC" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Cast" expanded="True">
+                  <Node name="Details.cshtml" selected="True" />
+                </Node>
+                <Node name="Movies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MovieShopMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

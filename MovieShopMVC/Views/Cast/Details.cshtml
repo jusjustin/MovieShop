@@ -3,26 +3,60 @@
 
 <h1>Cast Details</h1>
 
-<a>
-	@Model.Id
-	<br />
-	@Model.Name
-	<br />
-	@Model.Gender
-	<br />
-	@Model.ProfilePath
-	<br />
-	<hr />
-	@foreach(var movie in @Model.Movies)
-	{
-		
-		@movie.Id
-		<br />
-		@movie.PosterUrl
-		<br />
-		@movie.Title
-		<br />
-		@movie.Character
-		<hr />
-	}
-</a>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="@Model.ProfilePath" />
+            1 of 2
+        </div>
+        <div class="col">
+            <h1>@Model.Name</h1>
+            if (@Model.Gender == 1) { <h3>Female</h3> } elseif (@Model.Gender == 2) { <h3>Male</h3> }</h3>
+            <h2>
+                Details: aslkdfjlaskjaskldfjklasjdfkljasdlkfjaksldjfkljsdklfjksldjfklas
+                alskdjfklasjdfkljasdklfjlkadsjfklasjdlkjflkajsdfklasdfasjdflkjasdkfjkasdjfk
+                jdklfjklasdjfklasjdfkljskldajklajskldjfaskldfjlkasdjfklajsdlkfjadskfjlkjsadk
+            </h2>
+            1 of 2
+        </div>
+    </div>
+    <hr />
+    @foreach (var movie in @Model.Movies)
+    { 
+        <div class="row">
+                <div class="col">
+                    <img src="@movie.PosterUrl" />
+                </div>
+                <div class="col">
+                    <h3 class="text-start">@movie.Title</h3>
+                    <h4 class="text-end">@movie.Character</h4>
+                </div>
+            <hr />
+        </div>
+    }
+</div>
+
+@*<a>
+    @Model.Id
+    <img src="@Model.ProfilePath"
+    <br />
+    @Model.Name
+    <br />
+    @Model.Gender
+    <br />
+
+    <br />
+    <hr />
+    @foreach (var movie in @Model.Movies)
+    {
+
+        @movie.Id
+        <br />
+        @movie.PosterUrl
+        <br />
+        @movie.Title
+        <br />
+        @movie.Character
+        <hr />
+    }
+</a>*@
