@@ -6,18 +6,26 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <img src="@Model.ProfilePath" />
-            1 of 2
+            <img src="@Model.ProfilePath"/>
         </div>
         <div class="col">
             <h1>@Model.Name</h1>
-            if (@Model.Gender == 1) { <h3>Female</h3> } elseif (@Model.Gender == 2) { <h3>Male</h3> }</h3>
-            <h2>
-                Details: aslkdfjlaskjaskldfjklasjdfkljasdlkfjaksldjfkljsdklfjksldjfklas
-                alskdjfklasjdfkljasdklfjlkadsjfklasjdlkjflkajsdfklasdfasjdflkjasdkfjkasdjfk
-                jdklfjklasdjfklasjdfkljskldajklajskldjfaskldfjlkasdjfklajsdlkfjadskfjlkjsadk
-            </h2>
-            1 of 2
+            @if (Int32.Parse(@Model.Gender) == 1)
+            {
+                <h3>Female</h3>
+            }
+            @if (Int32.Parse(@Model.Gender) == 2)
+            {
+                <h3>Male</h3>
+            }
+                 
+            <h3>
+                Details: is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+                essentially unchanged.
+            </h3>
         </div>
     </div>
     <hr />
@@ -25,11 +33,11 @@
     { 
         <div class="row">
                 <div class="col">
-                    <img src="@movie.PosterUrl" />
+                    <img src="@movie.PosterUrl" width="75" height="100"/>
                 </div>
                 <div class="col">
-                    <h3 class="text-start">@movie.Title</h3>
-                    <h4 class="text-end">@movie.Character</h4>
+                    <h4 class="text-start">@movie.Title</h4>
+                    <h5 class="text-end">@movie.Character</h5>
                 </div>
             <hr />
         </div>
