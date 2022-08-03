@@ -19,11 +19,11 @@
         <a style="color: white;">@Model.Overview</a>
     </div>
     <div class="col">
-        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
             Review
         </button>
-        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-            Buy
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            Buy: $@Model.Price
         </button>
     </div>
   </div>
@@ -70,16 +70,18 @@
   </div>
 </div>
 
-<!-- Modal1 -->
+<!-- Modal1 --- Purchase -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel1">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel1">Purchase</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <h3>Would You Like To Purchase This Movie?</h3>
+        <br />
+        <h4>$@Model.Price</h4>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
@@ -89,12 +91,12 @@
   </div>
 </div>
 
-<!-- Modal2 -->
+<!-- Modal2 --- Review -->
 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel2">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel2">Review</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
