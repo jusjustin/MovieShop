@@ -1,16 +1,19 @@
 ﻿using ApplicationCore.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MovieShopMVC.Infra;
 
 namespace MovieShopMVC.Controllers
 {
     [Authorize]
     public class UserController : Controller
     {
+        private readonly ICurrentUser _currentUser;
+
         [HttpGet]
-        
         public async Task<IActionResult> Purchases()
         {
+            var userId = _currentUser.UserId;
             return View();
         }
         [HttpGet]
