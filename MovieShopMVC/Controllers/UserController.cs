@@ -1,11 +1,14 @@
 ﻿using ApplicationCore.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MovieShopMVC.Controllers
 {
+    [Authorize]
     public class UserController : Controller
     {
         [HttpGet]
+        
         public async Task<IActionResult> Purchases()
         {
             return View();
