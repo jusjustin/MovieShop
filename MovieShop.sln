@@ -5,9 +5,15 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShopMVC", "MovieShopMVC\MovieShopMVC.csproj", "{BDA8A62D-D84B-4EEE-B9D0-2E028DFB7AD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationCore", "ApplicationCore\ApplicationCore.csproj", "{9DB0F2F4-1130-4918-90B9-2FC3E1B76AD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationCore", "ApplicationCore\ApplicationCore.csproj", "{9DB0F2F4-1130-4918-90B9-2FC3E1B76AD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{AA5285E0-793A-4C42-9052-5382DACD1E62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{AA5285E0-793A-4C42-9052-5382DACD1E62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieShopAPI", "MovieShopAPI\MovieShopAPI.csproj", "{19DD742B-3EF3-4932-855A-AC4CAD4C10BD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9DB0F2F4-1130-4918-90B9-2FC3E1B76AD3} = {9DB0F2F4-1130-4918-90B9-2FC3E1B76AD3}
+		{AA5285E0-793A-4C42-9052-5382DACD1E62} = {AA5285E0-793A-4C42-9052-5382DACD1E62}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,10 @@ Global
 		{AA5285E0-793A-4C42-9052-5382DACD1E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA5285E0-793A-4C42-9052-5382DACD1E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA5285E0-793A-4C42-9052-5382DACD1E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19DD742B-3EF3-4932-855A-AC4CAD4C10BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DD742B-3EF3-4932-855A-AC4CAD4C10BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DD742B-3EF3-4932-855A-AC4CAD4C10BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DD742B-3EF3-4932-855A-AC4CAD4C10BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
